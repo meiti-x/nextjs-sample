@@ -1,0 +1,3 @@
+.label {
+    @apply mb-1 flex text-sm font-medium text-gray-600
+}

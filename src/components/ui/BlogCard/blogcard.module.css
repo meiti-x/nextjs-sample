@@ -1,0 +1,84 @@
+.container {
+    @apply flex
+}
+
+.container .wrapper {
+    @apply flex flex-col w-full overflow-hidden rounded-lg border-transparent transition-all hover:shadow-md;
+}
+
+.container .wrapper[datatype='horizontal'] {
+    @apply flex flex-row hover:shadow-none p-2.5
+}
+.container .wrapper[datatype='horizontal'] img {
+    @apply w-1/5 ml-auto
+}
+.container .wrapper[datatype='horizontal'] .content {
+    @apply w-full flex
+}
+.container .wrapper[datatype='horizontal'] .footer {
+    @apply w-full flex
+}
+
+.container .footer {
+    @apply mt-auto
+}
+
+.container .content {
+    @apply flex flex-col px-2
+}
+
+.container .cardImage {
+    @apply rounded ml-2 w-full;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.date {
+    @apply text-sm font-bold  text-gray-500
+}
+
+.categories {
+    @apply text-sm font-bold text-yellow-400
+}
+
+.description {
+    @apply my-2 line-clamp-2 text-gray-500
+}
+
+.share {
+    @apply cursor-pointer hover:text-blue-500
+}
+
+.like {
+    @apply cursor-pointer hover:text-red-500
+}
+.like[data-active="true"] {
+    @apply text-red-500 fill-red-500
+}
+
+.comment {
+    @apply cursor-pointer hover:text-emerald-500
+}
+
+.continueReadingButton {
+    @apply my-2 mr-auto inline-block text-primary-main
+}
+
+/* styles for small blog card*/
+.container.small .wrapper {
+    @apply flex flex-col overflow-hidden rounded-lg border-transparent transition-all hover:shadow-md;
+}
+
+.container.small .footer {
+    @apply flex
+}
+
+.container.small .content {
+    @apply px-1 pb-5
+}
+
+.container.small .cardImage {
+    @apply h-1/2 max-w-full
+}
+
+

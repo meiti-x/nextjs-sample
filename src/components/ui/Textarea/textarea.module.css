@@ -1,0 +1,15 @@
+.input {
+    @apply w-full  rounded border-2 border-gray-300 bg-white px-3 py-3.5 text-sm font-medium text-gray-900 placeholder:text-gray-500 hover:border-gray-600
+}
+
+.input:disabled {
+    @apply bg-gray-200 pointer-events-none
+}
+
+.input[data-error=true] {
+    @apply border-red-300 bg-red-50
+}
+
+.label {
+    @apply mb-1 inline-block text-sm font-normal text-gray-600
+}

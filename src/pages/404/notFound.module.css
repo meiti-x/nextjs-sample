@@ -1,0 +1,20 @@
+.errorCode {
+    @apply text-center text-white;
+    font-size: 20rem;
+    filter: drop-shadow(10px 8px 0px #ddd)
+}
+
+.title {
+    @apply mt-5 text-center
+}
+
+.desc {
+    @apply mt-2 text-gray-800 text-center
+}
+
+@media screen and (max-width: 992px) {
+    .errorCode {
+        font-size: 10rem;
+        filter: drop-shadow(10px 8px 0px #ddd)
+    }
+}

@@ -1,0 +1,18 @@
+.input {
+    @apply inline-block h-5 w-5
+}
+.input:focus{
+    @apply outline-0
+}
+
+.input:disabled {
+    @apply bg-gray-200 pointer-events-none
+}
+
+.input[data-error=true] {
+    @apply border-red-300 bg-red-50
+}
+
+.label {
+    @apply mb-1 inline-block text-sm font-normal text-gray-600 ms-2
+}
